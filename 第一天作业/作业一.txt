@@ -1,0 +1,16 @@
+3、 数据类型有几种？以及每种的默认值是多少?请简单说一下
+答：八种基本类型 
+byte：默认值是 0；
+short： 默认值是 0；
+int：默认值是 0 ；
+long：默认值是 0L；
+float：默认值是 0.0f；
+double：默认值是 0.0d；
+boolean：默认值是 false；
+char：默认值是 \u0000引用类型（reference type）指向一个对象，不是原始值，指向对象的变量是引用变量
+
+
+13、 StringBuilder 与StringBuffer的区别？
+答：当对字符串进行修改的时候，需要使用 StringBuffer 和 StringBuilder 类
+StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于StringBuilder 的方法不是线程安全的（不能同步访问）。
+由于 StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。
